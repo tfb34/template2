@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+</head>
+<body>
+	<!--navigation bar with business title-->
+	<nav>
+		<div id="navbar">
+			<div class="side-column right">
+				<ul id="left-menu">
+					<li><a href="javascript:scrollTo('home');" class="home active">HOME</a></li>
+					<li><a href="javascript:scrollTo('about');" class="about">ABOUT</a></li>
+					<li><a href="javascript:scrollTo('services');" class="services">SERVICES</a></li>
+				</ul>
+			</div>
+			<div><h1>COLIBRITECH</h1></div>
+			<div class="side-column left">
+				<ul id="right-menu">
+					<li><a href="javascript:scrollTo('gallery');" class="gallery">GALLERY</a></li>
+					<li><a href="javascript:scrollTo('contact');" class="contact">CONTACT US</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--navigation bar while scrolling-->
+	<nav id="scrolling-navbar" class="hide">
+		<a href="javascript:scrollTo('home');" class="home active">HOME</a>
+		<a href="javascript:scrollTo('about');" class="about">ABOUT</a>
+		<a href="javascript:scrollTo('services');" class="services">SERVICES</a>
+		<a href="javascript:scrollTo('gallery');" class="gallery">GALLERY</a>
+		<a href="javascript:scrollTo('contact');" class="contact">CONTACT US</a>
+	</nav>
+	<!--navigation bar for small devices-->
+	<div id="mobile-navbar">
+		<div id="menu-btn" onclick="toggleMenu()">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+		<h1>BUSINESS TITLE GOES HERE</h1>
+	</div>
+	<div id="mobile-menu" class="hide">
+		<ul >
+			<li><a href="javascript:scrollToSection('home');">HOME</a></li>
+			<li><a href="javascript:scrollToSection('about');">ABOUT</a></li>
+			<li><a href="javascript:scrollToSection('services');">SERVICES</a></li>
+			<li><a href="javascript:scrollToSection('gallery');">GALLERY</a></li>
+			<li><a href="javascript:scrollToSection('contact');">CONTACT US</a></li>
+		</ul>
+	</div>
+	<div id="home">
+		<div id="mobile-contact-footer">
+			<ul>
+				<li><a href="mailto:contact@yourBusinessEmail.com">EMAIL</a></li>
+				<li><a href="tel:123456789x">CALL</a></li>
+			</ul>
+		</div>
+	</div>
+
+		<!--ABOUT-->
+		<div id="about" class="section">
+			<div class="content">
+				<h2>ABOUT</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<div class="col">
+					<h4>SERVICE AREAS</h4>
+					<p>New Jersey &mdash; Rutherford, Jersey City</p>
+					<h4>SPECIALIZING IN</h4>
+					<ul>
+						<li>Dog walks</li>
+						<li>Petsitting</li>
+					</ul>
+				</div>
+				<div class="col"> 
+					<img src="assets/aboutMePic.jpeg">
+				</div>
+			</div>
+		</div>
+		<!--SERVICES-->
+		<div id="services" class="section">
+			<div class="content">
+			<h2>SERVICES</h2>
+			<div class="column-1">
+				<div class="service-pic one"></div>
+				<h3 class="title">Dog Walking</h3>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+			</div>
+			<div class="column-1">
+				<div class="service-pic two"></div>
+				<h3 class="title">Petsitting at your home</h3>
+				<p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p>
+			</div>
+			<div class="column-1">
+				<div class="service-pic three"></div>
+				<h3 class="title">Petsitting in my home</h3>
+				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			</div>
+			<div class="btn-wrapper"><a href="javascript:scrollTo('contact');" class="btn">CONTACT US</a></div>
+			</div>
+		</div>
+		<!--GALLERY-->
+		<div id="gallery" class="section">
+			<div class="content">
+			<h2>GALLERY</h2>
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <img src="assets/playingCatch.jpeg" style="width:100%">
+				  <div class="text">Playing Catch</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="assets/catPic.jpeg" style="width:100%">
+				  <div class="text">Lounging</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="assets/frenchie.jpeg" style="width:100%">
+				  <div class="text">Frenchie</div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+			<div class="btn-wrapper"><a href="#" class="btn">VIDEOS</a></div>
+			</div>
+		</div>
+	<div id="contact" class="section">
+		<div class="content">
+			<h2>CONTACT US</h2>
+			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+			<div class="col">
+			<h4>PHONE</h4>
+			<a href="tel:123456789x">(201)xxx-2345</a>
+			<h4>EMAIL</h4>
+			<a href="mailto:contact@yourBusinessEmail.com">contact@yourBusinessEmail.com</a>
+			<h4>LOCATION</h4>
+			<p>Rutherford and Jersey City</p>
+			</div>
+			<div class="col">
+			<h4>CONTACT FORM</h4>
+			<div id="form">
+			    <form method="post" action="https://p10.secure.webhosting.luminate.com/forms?ssc=us1&amp;login=elisabethb_cpatrust">
+			    <font face="sans-serif">
+				   	<label>Name</label>
+				    <input class="form-input" type="text" name="name" required="" placeholder="">
+				    <label>Phone</label>
+				    <input type="tel" class="form-input" name="phone" required="" placeholder="">
+				    <label>Email</label>
+				    <input class="form-input" type="email" name="email" size="27" required="" placeholder="">
+				    <label>Dog's name, breed, age : </label>
+				    <textarea class="form-input form-text-input" cols="40" rows="5" placeholder="" name="dogInfo" required=""></textarea><br/>  
+				    <label>What services are you interested in?</label>
+				    <input type="checkbox" name="option1" value="petsitting"><span>Petsitting</span><br>
+  					<input type="checkbox" name="option2" value="walks" ><span>Dog Walks</span><br>
+  					<input type="checkbox" name="option3" value="other" ><span>Other</span><br>
+  					<label>When do you require these services?</label>
+  					<textarea class="form-input form-text-input" cols="40" rows="5" placeholder="" name="when" required=""></textarea><br/>  
+			    </font>         
+			    <input class="form-btn send" type="submit" value="Send">
+			    <input type="hidden" name="subject" value="Contact Form">
+			    <input type="hidden" name="next_url" value="http://jscpagrowth.com/contact_us">
+			    </form>
+		    </div>
+			</div>
+		</div>
+	</div>
+	<!--FOOTER-->
+	<footer>
+		<h3><a href="javascript:scrollTo('home');">BACK TO TOP</a></h3>
+		<ul>
+			<li><a href="tel:123456789x">(123)-xxx-6789</a></li>
+			<li><a href="mailto:contact@yourBusinessEmail.com">contact@yourBusinessEmail.com</a></li>
+		</ul>
+		<p>&copy; YOUR BUSINESS NAME</p>
+	</footer>
+	<script type="text/javascript" src="myscript.js"></script>
+</body>
+</html>
